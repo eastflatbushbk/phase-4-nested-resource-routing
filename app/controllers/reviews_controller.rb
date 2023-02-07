@@ -7,6 +7,7 @@ class ReviewsController < ApplicationController
       reviews = dog_house.reviews
     else
     reviews = Review.all
+    end
     render json: reviews, include: :dog_house
   end
 
